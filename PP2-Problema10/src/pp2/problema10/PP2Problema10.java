@@ -30,9 +30,9 @@ public class PP2Problema10 {
     public static void fibonacci(int numero){
         int a=1,b=1;
         System.out.println("Serie Fobunacci");
-        System.out.println(a + " ");
+        System.out.print(a + " ");
         for(int i=2;i<numero;i++){
-            System.out.println(b + " ");
+            System.out.print(b + " ");
             b= a + b ;
             a= b - a;
         }
