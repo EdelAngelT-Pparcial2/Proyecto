@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pp2.problema3;
+package problema.pkg3;
 import java.util.*;
 /**
  *
- * @author Alumno
+ * @author LuisGuillermo
  */
-public class PP2Problema3 {
+public class Problema3 {
 
     /**
      * @param args the command line arguments
@@ -21,10 +21,10 @@ public class PP2Problema3 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce numero");
         numero=teclado.nextInt();
-        for (int a=numero)
-        
-    }
-  
-        
+        for (int i=numero;i>0;i--){
+            factorial= factorial * i;
+        }
+        System.out.println("El factorial de "+ numero + " es " + factorial);
     }
     
+}
