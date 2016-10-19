@@ -21,8 +21,8 @@ public class Problema3 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce numero");
         numero=teclado.nextInt();
-        for (int a=numero;a>0;a--){
-            factorial= factorial * a;
+        for (int i=numero;i>0;i--){
+            factorial= factorial * i;
         }
         System.out.println("El factorial de "+ numero + " es " + factorial);
     }
