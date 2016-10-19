@@ -17,9 +17,9 @@ public class PP2Problema5 {
     public static void main(String[] args) {
         // TODO code application logic here
         int primo;
-        int num = 0;
+        int i;
         primo = solicitarnumero();
-        numero(primo,num);
+        numero(primo);
         
     }
     public static int solicitarnumero(){
@@ -29,17 +29,15 @@ public class PP2Problema5 {
         primo = teclado.nextInt();
         return primo;
     }
-    public static void numero(int primo,int num){
-       for(int i=1;i>primo+1;i++){
-           if(primo % i==0){
-               num++;
-                }
-            }
-        if(num!=2){
-            System.out.println("Numero es primo");}
+    public static void numero(int primo){
+       int i=1;
+       while (primo%i==0){
+           i++;
+       }
+       
+        if(i==2){
+            System.out.println("Numero primo");}
         else{
-            System.out.println("Numero no es primo");}
+            System.out.println("Numero no primo");}
         }
     }
-
-
