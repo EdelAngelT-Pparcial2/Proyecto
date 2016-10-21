@@ -23,21 +23,21 @@ public class PP2Problema12 {
     public static int[] solicitarNumero(int []a){
         int i=0;
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Introduce numero");
+        System.out.println("Introduce numero");//Se solicitan los numeros
         while(i<a.length){
         a[1]= teclado.nextInt();
         i++;
         }
         return a;
         }
-    public static void mostrar(int []a){
+    public static void mostrar(int []a){//Se hace la suma de los numeros y se calula la media de todos esos
        int p=0,q=0;
        for(int i=1;i<a.length;i+=2){
            p=a[i]+p;
           q++;
        }
        p=p/q;
-       System.out.println("La media de los numeros es:" + p);
+       System.out.println("La media de los numeros es:" + p);//Muestra el promedio de los numeros
     }
 }
  
