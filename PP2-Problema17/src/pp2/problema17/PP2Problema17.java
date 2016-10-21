@@ -25,7 +25,7 @@ public class PP2Problema17 {
         mostrarMCD(a,b,c);
         
     }
-    public static int solicitarA(){
+    public static int solicitarA(){//Se ingresa el primer numero
         int a;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce primer numero");
@@ -33,14 +33,14 @@ public class PP2Problema17 {
         return a;
         
     }
-    public static int solicitarB(){
+    public static int solicitarB(){//Se ingresa el segundo numero
         int b;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce primer numero");
         b= teclado.nextInt();
         return b;
     }
-    public static int mcd(int a, int b){ 
+    public static int mcd(int a, int b){ //Se calcula cual es el maximo comun divisor de los 2 numeros
         int c=0;
         for(int i=1;i<=a;i++){
             if(a%i == 0&&b%i == 0)
@@ -48,7 +48,7 @@ public class PP2Problema17 {
             }
         return c;
         }
-    public static void mostrarMCD(int a,int b,int c){
+    public static void mostrarMCD(int a,int b,int c){//Se muestra el resultado
         System.out.println("El maximo comun divisor es " + c);
     }
 }
