@@ -20,14 +20,14 @@ public class PP2Problema10 {
         numero = solicitarNum();
         fibonacci(numero);
     }
-    public static int solicitarNum(){
+    public static int solicitarNum(){//Se solicita un numero
         int numero;
         Scanner teclado = new Scanner (System.in);
         System.out.println("Introduce numero");
         numero = teclado.nextInt();
         return numero;
     }
-    public static void fibonacci(int numero){
+    public static void fibonacci(int numero){//Se calcula la sucesion de fubonacci
         int a=1,b=1;
         System.out.println("Serie Fobunacci");
         System.out.print(a + " ");
