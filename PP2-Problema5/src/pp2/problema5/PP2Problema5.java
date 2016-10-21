@@ -22,21 +22,21 @@ public class PP2Problema5 {
         numero(primo);
         
     }
-    public static int solicitarnumero(){
+    public static int solicitarnumero(){//Se introduce el numero
         int primo;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introducir numero");
         primo = teclado.nextInt();
         return primo;
     }
-    public static void numero(int primo){
+    public static void numero(int primo){//Se comprueba el numero
        int i=1;
        while (primo%i==0){
            i++;
        }
        
         if(i==2){
-            System.out.println("Numero primo");}
+            System.out.println("Numero primo");}//Se muestra si el numero es primo o no
         else{
             System.out.println("Numero no primo");}
         }
