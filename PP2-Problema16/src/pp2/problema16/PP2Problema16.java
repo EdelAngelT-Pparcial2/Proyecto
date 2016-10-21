@@ -25,14 +25,14 @@ public class PP2Problema16 {
         mayor(a,b,c);
         
         }
-    public static int solicitarNumero(String dato){
+    public static int solicitarNumero(String dato){//Se ingresan los 3 numeros que usaremos
         int numero;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingresa numero " + dato);
         numero= teclado.nextInt();
         return numero;
     } 
-    public static void mayor(int a,int b,int c){
+    public static void mayor(int a,int b,int c){//Calculamos cual de esos es el mayor
         int m;
         m=a;
         if(m<b)m=b;
