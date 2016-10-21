@@ -24,7 +24,7 @@ public class PP2Problema18 {
         muestra(min);
                 
     }
-    public static int solicitarNumero(String numero){
+    public static int solicitarNumero(String numero){//Se ingresan nuestros valores
         int n;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduzca" + numero);
@@ -36,10 +36,10 @@ public class PP2Problema18 {
     public static int minimo(int a,int b,int c){
         int d,i;
         d=a;
-        if(d<b)d=b;
+        if(d<b)d=b;//Aqui se comparan valores y se guarda el mas alto
         if(d<c)d=c;
         for(i=2;i<d;i++){
-            if(a%i==0 || b%i==0 || c%i==0){
+            if(a%i==0 || b%i==0 || c%i==0){//valores que sean factor de un numero
               d=d*i;
               if(a%i==0)a=a/i;
               if(b%i==0)b=b/i;
@@ -48,7 +48,7 @@ public class PP2Problema18 {
         }
         return d;
     }
-    public static void muestra(int minimo){
+    public static void muestra(int minimo){//Se muestra el mcm
         System.out.println("El minimo comun multiplo es; " + minimo);
     }
 }
