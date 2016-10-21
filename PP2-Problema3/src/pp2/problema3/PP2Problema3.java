@@ -21,20 +21,20 @@ public class Problema3 {
         numero= solicitarNumero();
         factorial(numero);
          }
-    public static int solicitarNumero(){
+    public static int solicitarNumero(){//Se introduce el numero
         int numero;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce numero");
         numero= teclado.nextInt();
         return numero;
     }
-    public static void factorial(int numero){
+    public static void factorial(int numero){//Se calcula para ver si el numero es factorial o no
         int resultado=1;
         for(int i = numero; i>0 ;i--){
             resultado= resultado * i;
         }
         
-     System.out.println("El factorial de "+ numero + " es " + resultado);
+     System.out.println("El factorial de "+ numero + " es " + resultado);//Se muestra el resultado
     }
     
 }
