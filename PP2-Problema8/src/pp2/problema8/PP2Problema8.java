@@ -39,7 +39,7 @@ public class PP2Problema8 {
     }
     public static void hipotenusa(int c1, int c2){//Se calcula la hipotenusa
         double h;
-        h = Math.pow(c1,2)+ Math.pow(c2,2);
+        h = Math.sqrt(Math.pow(c1,2)+ Math.pow(c2,2));
         System.out.println("la hipotenusa es de " + h);
     }
 }
