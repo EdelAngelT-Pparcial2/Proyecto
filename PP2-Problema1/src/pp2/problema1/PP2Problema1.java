@@ -20,14 +20,14 @@ public class PP2Problema1 {
     anyo = solicitarAnyo();
     anyoBisiesto(anyo);
     }
-    public static int solicitarAnyo(){
+    public static int solicitarAnyo(){//Se pide el año
         int anyo;
         Scanner teclado = new Scanner (System.in);
         System.out.println("Ingresa el año");
         anyo = teclado.nextInt();
         return anyo;
     }
-     public static void anyoBisiesto (int anyo){
+     public static void anyoBisiesto (int anyo){//Se calcula si el año es bisiesto o no
         if (anyo % 4 == 0 && anyo % 100 != 0 || anyo % 400 ==0){
             System.out.println("El año" + anyo + "es bisiesto");}
         else{System.out.println("El año" + anyo + "no es bisiesto");
