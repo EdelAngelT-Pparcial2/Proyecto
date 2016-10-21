@@ -25,27 +25,27 @@ public class PP2Problema2 {
         
         
     }
-    public static int solicitarMetros(){
+    public static int solicitarMetros(){//Se introducen los metros
         int metros;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingresa la cantidad");
         metros= teclado.nextInt();
         return metros;
     }
-   public static double solicitarPies(int metros){
+   public static double solicitarPies(int metros){//Se calculan los pies
        double pies;
        pies = metros * 3.28084;
        System.out.println("El resultado es "+ pies + " pies");
        return pies;
        
    }
-   public static double solicitarYardas(int metros){
+   public static double solicitarYardas(int metros){//Se calculan las yardas
        double yardas;
        yardas = metros * 1.09361;
        System.out.println("El resultado es " + yardas + " yardas");
        return yardas;
    }
-   public static double solicitarMillas(int metros){
+   public static double solicitarMillas(int metros){//Se calculan las millas
        double millas;
        millas = metros * 0.000621371;
        System.out.println("El resultado es " + millas + " millas");
