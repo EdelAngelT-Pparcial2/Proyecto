@@ -22,7 +22,7 @@ public class PP2Problema13 {
      p= calcularPromedio(calif);
      promedios(calif,p);
     }
-    public static int[] solicitarCalif(int []a){
+    public static int[] solicitarCalif(int []a){//Se solicitan los datos para el arreglo
     Scanner teclado = new Scanner(System.in);
     
     for(int i=0;i<a.length;i++){
@@ -31,7 +31,7 @@ public class PP2Problema13 {
         }
     return a;
     }
-    public static int calcularPromedio(int []a){
+    public static int calcularPromedio(int []a){//Se calcula el promedio
         int b=0,c=0,p;
         for(int i=0;i<a.length;i++){
             b=a[i] + b;
@@ -41,7 +41,7 @@ public class PP2Problema13 {
     System.out.println("El promedio es de: " + p);
     return p;
     }
-    public static void promedios(int []a,int p){
+    public static void promedios(int []a,int p){//Se calculan los numeros que estan arriba y abajo del promedio obtenido
         int x=0,y=0;
         for(int i=0;i<a.length;i++)
             if(a[i]<p){
