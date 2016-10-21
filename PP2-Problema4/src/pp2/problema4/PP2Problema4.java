@@ -23,21 +23,21 @@ public class PP2Problema4 {
         grados(farenheit,celsius);
         
     }
-    public static int solicitarCelsius(){
+    public static int solicitarCelsius(){//Se solicita los grados celsius
         int celsius;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Grados celsius");
         celsius = teclado.nextInt();
         return celsius;
     }
-    public static int solicitarFarenheit(int celsius){
+    public static int solicitarFarenheit(int celsius){//Se convierten celsius a farenheit
         int farenheit;
         farenheit= 32+(9*celsius/5);
         return farenheit;
         
         
     }
-    public static void grados(int farenheit, int celsius){
+    public static void grados(int farenheit, int celsius){//Se muestra resultado
         System.out.println(celsius + " grados centigrados son "+ farenheit +" Farenheit");
         
     }
