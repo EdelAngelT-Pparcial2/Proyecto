@@ -25,7 +25,7 @@ public class PP2Problema12 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce numero");//Se solicitan los numeros
         while(i<a.length){
-        a[1]= teclado.nextInt();
+        a[i]= teclado.nextInt();
         i++;
         }
         return a;
