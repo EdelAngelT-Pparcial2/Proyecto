@@ -22,20 +22,20 @@ public class PP2Problema7 {
         metros= solicitarMetros(kilometros);
         velocidad(metros,kilometros);
         }
-    public static double solicitarKilometros(){
+    public static double solicitarKilometros(){//Ingresar los kilometros sobre hora
         double kilometros;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce km/h");
         kilometros= teclado.nextInt();
         return kilometros;
     }
-    public static double solicitarMetros(double kilometros){
+    public static double solicitarMetros(double kilometros){//Se hace la conversion de km/h a m/s
         double metros;
         metros= kilometros*1000/3600;
         return metros;
     }
     public static void velocidad(double metros, double kilometros){
-        System.out.println(kilometros + " km/h equivalen a " + metros + "m/s");
+        System.out.println(kilometros + " km/h equivalen a " + metros + "m/s");//Se muestra el resultado
     }
     
 }
