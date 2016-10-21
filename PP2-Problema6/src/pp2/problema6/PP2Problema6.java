@@ -22,21 +22,21 @@ public class PP2Problema6 {
         sueldo = solicitarSueldo();
         sueldoTotal(hora,sueldo);
     }
-    public static int solicitarHora(){
+    public static int solicitarHora(){//Se solicita la hora
         int hora;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce hora");
         hora= teclado.nextInt();
         return hora;
         }
-    public static int solicitarSueldo(){
+    public static int solicitarSueldo(){//Se solicita el suelo
         int sueldo;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce sueldo");
         sueldo= teclado.nextInt();
         return sueldo;
     }
-    public static void sueldoTotal(int hora, int sueldo){
+    public static void sueldoTotal(int hora, int sueldo){//Se calcula el sueldo del trabajador con las horas que trabajo
         int resultado = 0;
         if(hora<=40){
             resultado = hora*sueldo;
@@ -47,7 +47,7 @@ public class PP2Problema6 {
         if (hora>=48){
             resultado =(40*sueldo)+8*(sueldo*2)+(hora-48)*(sueldo*3);
         }
-    System.out.println("El sueldo es de "+ resultado);
+    System.out.println("El sueldo es de "+ resultado);//Se muestra el sueldo total
     
            
             
