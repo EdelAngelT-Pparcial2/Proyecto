@@ -21,7 +21,7 @@ public class PP2Problema20 {
         b= solicitarNum();
         amigos(a,b);
     }
-    public static int solicitarNum(){
+    public static int solicitarNum(){//Se ingresan los 2 numeros
         int n;
          Scanner teclado = new Scanner(System.in);
          System.out.println("Introduce numero");
@@ -29,20 +29,20 @@ public class PP2Problema20 {
          return n;
         
     }
-    public static void amigos(int a, int b){
+    public static void amigos(int a, int b){//
         int k=1,p=0,q=0;
         for(int i=1;i<a;i++){
             if(a%i==0){
-                p=i+p;
+                p=i+p;//Se guardaran la suma de los divisores del numero
             }
             
         }
-     for(k=1;k<b;k++){
+     for(k=1;k<b;k++){//Se analizan todos los divisores posibles
          if(b%k==0){
              q=k+q;
          }
      }
-     if(a==q & b==p){
+     if(a==q & b==p){//Se muestra si los numeros son amigos o no
          System.out.println("Los numeros " + a + " y " +  b +" son amigos");
      }else{
          System.out.println("Los numero " + a + " y " +b + " no son amigos");
